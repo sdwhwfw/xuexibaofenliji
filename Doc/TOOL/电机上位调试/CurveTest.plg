@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CurveTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/CurveTest.res" /d "_DEBUG" /d "_AFXDLL" "E:\SVN\Trima_M3\Doc\TOOL\电机上位调试\CurveTest.rc"" 
+Creating temporary file "C:\Users\Bruce\AppData\Local\Temp\RSPFFF2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "XGraph" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/CurveTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\SVN\Trima_M3\Doc\TOOL\电机上位调试\CurveTest.cpp"
+"E:\SVN\Trima_M3\Doc\TOOL\电机上位调试\CurveTestDlg.cpp"
+"E:\SVN\Trima_M3\Doc\TOOL\电机上位调试\GetPIDDescription.cpp"
+"E:\SVN\Trima_M3\Doc\TOOL\电机上位调试\pid.cpp"
+"E:\SVN\Trima_M3\Doc\TOOL\电机上位调试\PIDDlg.cpp"
+"E:\SVN\Trima_M3\Doc\TOOL\电机上位调试\queue.cpp"
+"E:\SVN\Trima_M3\Doc\TOOL\电机上位调试\SerialPort.cpp"
+]
+Creating command line "cl.exe @C:\Users\Bruce\AppData\Local\Temp\RSPFFF2.tmp" 
+Creating temporary file "C:\Users\Bruce\AppData\Local\Temp\RSP3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "XGraph" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/CurveTest.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\SVN\Trima_M3\Doc\TOOL\电机上位调试\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Bruce\AppData\Local\Temp\RSP3.tmp" 
+Creating temporary file "C:\Users\Bruce\AppData\Local\Temp\RSP13.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/CurveTest.pdb" /debug /machine:I386 /out:"Debug/CurveTest.exe" /pdbtype:sept 
+".\Debug\CurveTest.obj"
+".\Debug\CurveTestDlg.obj"
+".\Debug\GetPIDDescription.obj"
+".\Debug\pid.obj"
+".\Debug\PIDDlg.obj"
+".\Debug\queue.obj"
+".\Debug\SerialPort.obj"
+".\Debug\StdAfx.obj"
+".\Debug\CurveTest.res"
+]
+Creating command line "link.exe @C:\Users\Bruce\AppData\Local\Temp\RSP13.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CurveTest.cpp
+CurveTestDlg.cpp
+Automatically linking with XGraph10d.dll
+GetPIDDescription.cpp
+Automatically linking with XGraph10d.dll
+*** Linking with PCOMM.dll...
+pid.cpp
+PIDDlg.cpp
+queue.cpp
+Automatically linking with XGraph10d.dll
+SerialPort.cpp
+Generating Code...
+Automatically linking with XGraph10d.dll
+Linking...
+   Creating library Debug/CurveTest.lib and object Debug/CurveTest.exp
+Creating command line "bscmake.exe /nologo /o"Debug/CurveTest.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\CurveTest.sbr" ".\Debug\CurveTestDlg.sbr" ".\Debug\GetPIDDescription.sbr" ".\Debug\pid.sbr" ".\Debug\PIDDlg.sbr" ".\Debug\queue.sbr" ".\Debug\SerialPort.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CurveTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

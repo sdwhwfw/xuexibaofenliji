@@ -1,0 +1,35 @@
+; *************************************************************
+; *** Scatter-Loading Description File                      ***
+; *** Create: 2013/10/18                                    ***
+; *** Autor : Bruce.zhu                                     ***
+; ***        (C) Coryright 2013 VINY                        ***
+; *************************************************************
+
+LR_IROM 0x08000000 0x00100000              ; load region size_region
+{
+  ER_IROM 0x08000000 0x00100000            ; load address = execution address
+  {
+    *.o (RESET, +First)
+    *(InRoot$$Sections)
+    .ANY (+RO)
+  }
+
+  RW_EXRERNAL_SRAM 0x60000000 0x00080000   ; RW data in external SRAM
+  {
+    *.o (ESRAM_ARRAY)
+    *.o (HEAP)
+    trace.o (+RW +ZI)
+    app_shell.o (+RW +ZI)
+    app_fs.o (+RW +ZI)
+    app_led.o (+RW +ZI)
+  }
+
+  RW_IRAM1 0x20000000 0x00020000           ; RW data in internal SRAM
+  {
+    .ANY (+RW +ZI)
+  }
+}
+
+
+
+

@@ -1,0 +1,2 @@
+---- LOAD_CANAL_PUMP_SPEED Matches (1 in 1 files) ----
+App_control_pump.c (c:\users\w\desktop\trima_m3_612\app\control_board):#define LOAD_CANAL_PUMP_SPEED           50    /* 50rpm */

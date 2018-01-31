@@ -1,0 +1,404 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CurveTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CurveTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CurveTest"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CurveTest 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CURVETEST_DIALOG DIALOGEX 0, 0, 699, 439
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CurveTest"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出程序",IDCANCEL,585,363,73,26
+    PUSHBUTTON      "关闭电机1",IDC_BUTTON_STOP_MO,417,313,51,28
+    GROUPBOX        "PID参数设置",IDC_STATIC,113,10,260,159
+    GROUPBOX        "串口",IDC_STATIC,7,10,103,159
+    GROUPBOX        "实时信息显示",IDC_STATIC,377,10,322,159
+    GROUPBOX        "控制",IDC_STATIC,347,188,352,221
+    PUSHBUTTON      "采集数据1",IDC_BUTTON_START_CAP,417,199,51,28
+    PUSHBUTTON      "停止采集1",IDC_BUTTON_STOP_CAP,417,233,51,28
+    LTEXT           "电机转速（RPM）：",IDC_STATIC,394,60,97,10
+    EDITTEXT        IDC_EDIT_MO_SPEED,501,61,47,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "PWM值：",IDC_STATIC,394,87,97,10
+    EDITTEXT        IDC_EDIT_PWM,501,87,47,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_POINTS,501,139,47,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "打开",IDC_BUTTON_OPEN_COM,14,64,44,17
+    COMBOBOX        IDC_COMBO_SERIAL,26,29,68,219,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "KP",IDC_STATIC,147,56,8,8
+    LTEXT           "KPP",IDC_STATIC,147,76,18,8
+    LTEXT           "KPI",IDC_STATIC,147,96,18,8
+    LTEXT           "KPD",IDC_STATIC,147,116,18,8
+    EDITTEXT        IDC_EDIT_KP,199,53,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KPP,199,74,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KPI,199,95,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KPD,199,116,51,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "SET",IDC_BUTTON_SET_PID,199,135,48,19
+    PUSHBUTTON      "关闭",IDC_BUTTON_CLOSE_COM,62,64,44,17
+    LTEXT           "设置电机转速（RPM）",IDC_STATIC,27,201,80,8
+    EDITTEXT        IDC_EDIT_SET_MO_SP,124,198,47,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置速度",IDC_BUTTON_SET_SP,125,215,44,18
+    PUSHBUTTON      "打开电机1",IDC_BUTTON_START_MO,417,279,51,28
+    PUSHBUTTON      "保存参数",IDC_BUTTON_SAVE_DATA,491,363,73,26
+    PUSHBUTTON      "生成报告",IDC_BUTTON_REPORT,397,363,73,26
+    LTEXT           "USB数据传输速度",IDC_STATIC,394,26,67,8
+    EDITTEXT        IDC_EDIT_USB_SPEED,508,23,48,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_KP2,255,53,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KPP2,255,74,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KPI2,255,95,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KPD2,255,116,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KP3,309,53,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KPP3,309,73,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KPI3,309,94,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KPD3,309,115,51,12,ES_AUTOHSCROLL
+    LTEXT           "速度环",IDC_STATIC,213,33,24,12
+    LTEXT           "位置环",IDC_STATIC,270,33,26,12
+    LTEXT           "电机3",IDC_STATIC,322,33,24,12
+    PUSHBUTTON      "SET",IDC_BUTTON_SET_PID2,254,135,48,19
+    PUSHBUTTON      "SET",IDC_BUTTON_SET_PID3,309,135,48,19
+    PUSHBUTTON      "设置模式",IDC_BUTTON_SET_SP2,186,215,44,18
+    PUSHBUTTON      "电机速度3",IDC_BUTTON_SET_SP3,247,215,44,18
+    EDITTEXT        IDC_EDIT_MO_SPEED2,552,61,47,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PWM2,552,87,47,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_POINTS2,552,139,47,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_SET_MO_SP2,185,198,47,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MO_SPEED3,605,61,47,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PWM3,605,87,47,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_POINTS3,605,139,47,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_SET_MO_SP3,246,198,47,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "采集数据2",IDC_BUTTON_START_CAP2,497,199,51,28
+    PUSHBUTTON      "采集数据3",IDC_BUTTON_START_CAP3,577,199,51,28
+    PUSHBUTTON      "停止采集2",IDC_BUTTON_STOP_CAP2,497,233,51,28
+    PUSHBUTTON      "停止采集3",IDC_BUTTON_STOP_CAP3,577,233,51,28
+    PUSHBUTTON      "关闭电机2",IDC_BUTTON_STOP_MO2,497,313,51,28
+    PUSHBUTTON      "打开电机2",IDC_BUTTON_START_MO2,497,279,51,28
+    PUSHBUTTON      "关闭电机3",IDC_BUTTON_STOP_MO3,577,313,51,28
+    PUSHBUTTON      "打开电机3",IDC_BUTTON_START_MO3,577,279,51,28
+    LTEXT           "电机1",IDC_STATIC,514,48,24,8
+    LTEXT           "电机2",IDC_STATIC,565,48,24,8
+    LTEXT           "电机3",IDC_STATIC,615,48,24,8
+    LTEXT           "Bytes/S",IDC_STATIC,561,26,30,8
+    PUSHBUTTON      "SET ALL",IDC_BUTTON_SET_PID4,135,135,48,19
+    LTEXT           "有效数据点：",IDC_STATIC,394,139,49,8
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,63,361,205,17
+    CONTROL         "Progress1",IDC_PROGRESS_PWM_DUTY_CYCLE,
+                    "msctls_progress32",PBS_SMOOTH | WS_BORDER,72,266,258,18
+    CONTROL         "位置环",IDC_CHECK_POSITION_LOOP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,43,325,83,21
+    EDITTEXT        IDC_EDIT_POSITION_VAL,138,327,90,15,ES_AUTOHSCROLL
+    LTEXT           "拖动位置",IDC_STATIC,29,367,32,8
+    LTEXT           "PWM占空比",IDC_STATIC,29,271,37,8
+    LTEXT           "[0,0][0%]",IDC_PWM_DUTY_CYCLE,118,287,122,9
+    LTEXT           "当前位置：",IDC_STATIC,394,114,49,8
+    EDITTEXT        IDC_EDIT_POSITION_1,501,113,47,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_POSITION_2,552,113,47,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_POSITION_3,605,113,47,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_MAX_SP,274,363,55,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "开始",IDC_BUTTON_POSITION_LOOP,251,324,50,23
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,20,247,309,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,21,309,309,1
+    PUSHBUTTON      "获取电机参数",IDC_BUTTON_GET_PARAM,14,97,92,17
+    LTEXT           "PWM：",IDC_STATIC,73,287,28,8
+END
+
+IDD_DIALOG_PID DIALOG DISCARDABLE  0, 0, 438, 283
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+END
+
+IDD_DIALOG_PID_SM DIALOG DISCARDABLE  0, 0, 232, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "填写PID参数说明"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,175,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,24,50,14
+    EDITTEXT        IDC_EDIT_PID_DESC,13,17,154,120,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CurveTest Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CurveTest\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CurveTest.EXE\0"
+            VALUE "ProductName", "CurveTest 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CURVETEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        BOTTOMMARGIN, 409
+    END
+
+    IDD_DIALOG_PID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 431
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 276
+    END
+
+    IDD_DIALOG_PID_SM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CURVETEST_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_SERIAL, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO_SERIAL, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO_SERIAL, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO_SERIAL, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO_SERIAL, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_COMBO_SERIAL, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_COMBO_SERIAL, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_COMBO_SERIAL, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_COMBO_SERIAL, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x314d, 0x0030, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x314d, 0x0031, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x314d, 0x0032, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x314d, 0x0033, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x314d, 0x0034, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x314d, 0x0035, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x314d, 0x0036, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x314d, 0x0037, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x314d, 0x0038, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x314d, 0x0039, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x324d, 0x0030, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x324d, 0x0031, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x324d, 0x0032, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x324d, 0x0033, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x324d, 0x0034, 
+    IDC_COMBO_SERIAL, 0x403, 6, 0
+0x4f43, 0x324d, 0x0035, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\bin1.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CurveTest(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CurveTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
